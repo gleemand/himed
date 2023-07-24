@@ -4,6 +4,10 @@
 # Put parameters here that don't need to change on each machine where the app is deployed
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
+    crm_api_url: '%env(resolve:CRM_API_URL)%'
+    crm_api_key: '%env(resolve:CRM_API_KEY)%'
+    himed_api_url: '%env(resolve:HIMED_API_URL)%'
+    himed_api_key: '%env(resolve:HIMED_API_KEY)%'
 
 services:
     # default configuration for services in *this* file
